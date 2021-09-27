@@ -28,7 +28,7 @@ router.post('/', async (req, res) => {
             email: req.body.email,
             password: await bcrypt.hash(req.body.password, salt),
             isAdmin: req.body.isAdmin,
-            transactions: [ 
+            creditHistory: [ 
                 {
                     paymentHistory: "On-Time",
                     creditScore: "678", 
